@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styletableau.css">
+    <title>Les Tableaux</title>
+</head>
+<body>
+   <h1>Des tableaux pour les données tabulaires</h1>
+   <table><!-- debut tableaux -->
+       <caption>Nos ventes de la semaine</caption>
+       <thead><!--en tete du tableau-->
+           <tr>
+               <th>Jour de la semaine</th><!-- cellule de l'entete -->
+               <th>Smartphones</th>
+               <th>Tablettes</th>
+               <th>Ordinateurs</th>
+           </tr><!--rangée du tableau-->
+       </thead>
+       <tbody><!-- tbody= table body = le corps du tableaux -->
+           <tr><!-- represente une rangée -->
+               <td>Lundi</td>
+               <td>2</td>
+               <td>4</td>
+               <td>3</td><!-- table delta une donnée du tableau -->
+           </tr>
+           <tr>
+               <td>Mardi</td>
+               <td>1</td>
+               <td>0</td>
+               <td>5</td>
+           </tr>
+           <tr>
+               <td>Mercredi</td>
+               <td>1</td>
+               <td>6</td>
+               <td>0</td>
+           </tr>
+           <tr>
+               <td>Jeudi</td>
+               <td>7</td>
+               <td>4</td>
+               <td>0</td>
+           </tr>
+           <tr>
+               <td>Vendredi</td>
+               <td>1</td>
+               <td>2</td>
+               <td>6</td>
+           </tr>
+       </tbody>
+       <tfoot><!-- tfoot= table footer = le pied du tableaux -->  
+        <tr>
+               <td>Total</td>
+               <td>12</td>
+               <td>18</td>
+               <td>14</td>
+           </tr>
+       </tfoot>
+   </table><!-- fin de tableaux -->
+
+   <!-- debut tableau 2 -->
+   <table><!-- debut tableaux -->
+    <h2>Un second tableau</h2>
+    <thead>
+        <tr>
+            <th>NOM</th>
+            <th colspan="2">EMAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Amadeus Mozart</td>
+            <td>mozzard@gmail.com</td>
+            <td>amadeus@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mohammed Ali</td>
+            <td>momo@gmail.com</td>
+            <td>ali@gmail.com</td>
+        </tr>
+    </tbody>
+    </table><!-- fin du tableau -->
+    <table><!-- debut tableaux -->
+        <h2>Un troisième tableau</h2>
+       
+            <tr>
+                <td>NOM</td>
+                <td>Mozart</td>
+              
+            </tr>
+            <tr>
+                <td rowspan="2">EMAIL</td>
+                <td>mozzard@gmail.com</td>
+            </tr>
+            <tr>
+                <td>amadeus@gmail.com</td>
+            </tr>
+        </table><!-- fin du tableau -->
+</body>
+</html>

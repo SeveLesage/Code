@@ -1,0 +1,43 @@
+body {
+    background: cadetblue;
+}
+
+table, td {
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+td {
+    width: 30px;
+    height: 30px;
+}
+
+/* declaration des couleurs */
+
+.blanc {
+    background: white;
+}
+
+.jaune {
+    background: yellow;
+}
+
+.gris {
+    background: gray;
+}
+
+.noir {
+    background: black;
+}
+
+.bleu {
+    background: blue;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: blue;
+}

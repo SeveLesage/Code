@@ -1,0 +1,97 @@
+body {
+    font-family: fantasy;
+}
+table, td {
+    border: 1px solid rgb(180, 67, 86);
+    border-collapse: collapse;
+    margin: auto;
+    padding: 5px;
+
+}
+
+td {
+    width: 300px;
+    height: 30px;
+    color: rgb(180, 67, 86);
+}
+
+h1, h2, a {
+    text-align: center;
+    color: rgb(180, 67, 86);
+    text-decoration: none;
+}
+/* Les différent lien */
+
+a:link {/* lien par encore click */
+    text-decoration: none;
+}
+
+a:visited {/* lien quand il a etait visité */
+    color: yellow;
+}
+
+a:hover {/* lien au survol (quand on passe la souris dessu) */
+    border: 2px solid rgb(180, 67, 86);
+    padding: 5px;
+}
+
+a:active {/* lien quand l'on clique dessus */
+    background: white;
+    color: black;
+}
+
+/* style du tableau correction*/
+
+/* table {
+    width: 800px;
+    background-color: mistyrose;
+    margin: auto;
+}
+
+table, th, td {
+    border: 2px solid hotpink;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+th {
+    background-color: lavenderblush;
+    color: hotpink;
+}
+
+th, tr td:first-child {
+    background-color: lavenblush;
+    color: hotpink;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:nth-child(even) { ici tout les enfants de la rangée pair ont un background-color ivore
+    background: ivory;
+}
+
+pour tableau 2
+ici on vise la rangée 2
+.tableau2 class
+tr:nth-child(2) {
+     background: hotpink;
+}
+
+*/
+
+table thead {
+    background: white;
+    color: rgb(180, 67, 86);
+}
+
+table tbody td:first-child {
+    background: white;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(238, 132, 149);
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(204, 116, 130);   
+}

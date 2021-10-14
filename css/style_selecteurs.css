@@ -1,0 +1,30 @@
+
+/* Tous les paragraphe à l'interieur de la balise section prendront la couleur suivante */
+section p {
+    color: lightcoral;
+}
+/* Le premier p (premier enfant) à l'interieur de la balise section va être ici coloré en vert*/
+section p:first-child {
+    color: lightgreen;
+}
+/* Ici on selectionne le dernier p (dernier enfant) à l'interieur de la balise section*/
+section p:last-child {
+    text-transform: uppercase;/* ici tout sera transformé en majuscule */
+}
+/* Ici on sélectionne dans la balise section tout les paragraphe enfants impairs */
+section p:nth-child(odd) {
+    background: mistyrose;
+}
+/* On selectionne le septième enfant de la section */
+section p:nth-child(7) {
+    background: turquoise;
+}
+/* Pour déclarer sur plusieurs paragraphes on ne peut pas le faire entre les parenthese il faut tout redéfinir */
+section p:nth-child(5), section p:nth-child(9) {
+    font-style: italic;
+}
+/* on vise tous les paragraphes enfant pairs */
+section p:nth-child(even) {
+    background: #000;
+    color: #fff;
+}

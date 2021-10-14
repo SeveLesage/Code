@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma premiere page en CSS</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        section p {
+            color: green;
+        }
+
+        section h2,h3 {
+            text-align: center;
+            color: hotpink;
+            size: 10px;
+            font-style: oblique;
+        }
+
+        #entete {
+            height: 200px;
+            background-color: indigo;
+            background-image: url('img/motif_citron.png');
+            background-repeat: no-repeat;
+            box-shadow: 10px 0 10px 0;
+            margin-top: 50px;
+        }
+
+        #bgRose {
+            background-color: pink;
+            box-shadow: 5px 0 5px 0;
+        }
+
+        .bgGreen {
+            background-color: green;
+            box-shadow: 5px 0 5px 0;
+        }
+
+        .p20 {
+            background-color: yellowgreen;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ma premiere page en CSS</h1>
+        <Nav>
+            <a href="index.html">Page accueil</a>
+            <a href="definition.html">Définitions</a>
+            <a href="lien.html">La page des liens</a>
+        </Nav>
+    </header>
+    <section>
+        <h2>Définition</h2>
+        <p>CSS signifie Cascading Style Sheet ou en francais feuille de style il va 
+            pouvoir se placer à trois endroit différents
+        </p>
+        <ol>
+            <li>Style dans l'entête</li>
+            <li>Style dans la balise</li>
+            <li>Style dans un fichier externe</li>
+        </ol>
+
+    </section>
+    <section id="entete">
+        <h3 class="p20">Le style dans l'entête</h3>
+        <p>Pour faire du style dans l'entete on utilisera la balise style directement 
+            dans head pour faire du style on va visé un element</p>
+            <ol>
+                <li>Si element balise</li>
+                <li id="bgRose">Si element à id</li>
+                <li class="bgGreen">Si element à class</li>
+                <p class="p20">Faire une div de 200px</p>
+            </ol>
+    </section>
+    <section>
+        <h3>Le style dans la balise</h3>
+        <p style="font-size: 25px;">Pour faire du style directement sur une balise on utilise l'attribut style</p>
+        <p>Cette façon de faire n'est pas la plus conseiller car elle vise qu'un ellement et
+             c'est moin propre que la solution de la feuille de style externe</p>
+    </section>
+    <section>
+        <h3>Le style dans un fichier externe</h3>
+        <p>Cette façon de faire est la plus propre et la plus utiliser il faudras parcontre faire attention a ce que le lien soi bien faite</p>
+    </section>
+</body>
+</html>

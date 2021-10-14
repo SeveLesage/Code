@@ -1,0 +1,33 @@
+body {
+    background: #ffff;
+}
+
+table, tr, td{
+    border: 0.2px #fff solid ;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.rang1 {
+    background: #fff;
+}
+
+.jaune {
+    background: yellow;
+}
+
+.gris {
+    background: gray;
+}
+
+.grisfonce {
+    background: rgb(36, 35, 35);
+}
+
+.blanc {
+    background: #fff;
+}
+
+.bleu {
+    background: blue;
+}

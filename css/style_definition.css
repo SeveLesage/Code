@@ -1,0 +1,52 @@
+/**Feuille de style pour page definition**/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    margin: 10px;
+}
+
+/*
+Dans un premier temps, mettre le h1 en marron , le centrer et le mettre à une taille de 3em
+Les listes de définitions doivent faire 600px de largeur 
+Les termes définis doivent être en gras
+les définitions doivent être en italique
+les liens ne doivent plus être soulignés et ils doivent être de la même couleur que le titre 
+ */
+
+ /*h1 marron**/
+ h1 {
+     color: brown;
+     text-align: center;
+     font-size: 5em;
+ }
+
+ dt {
+     font-weight: bold;
+ }
+
+ dl {
+     width: 600px;
+     margin: 10px;
+ }
+
+ dd {
+     font-style: italic;
+ }
+
+ a {
+     text-decoration: none;
+     color: brown;
+ }
+ a:hover {
+     color: yellow;
+ }
+
+ .bordMarron {
+    
+     border: solid 2px brown;
+     width: 600px;
+ }

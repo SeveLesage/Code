@@ -1,0 +1,37 @@
+body {
+    background: rosybrown;
+}
+
+table, td, th{
+    border: 2px solid #fff;
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead {
+    background: #fff;
+    color: rosybrown;
+}
+
+tbody {
+    background: rgb(228, 200, 200);
+}
+
+tfoot {
+    font-weight: bold;
+    background: rgb(207, 144, 144);
+}
+
+h1, h2 {
+    color: #fff;
+}

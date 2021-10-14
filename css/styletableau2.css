@@ -1,0 +1,77 @@
+table {
+    width: 80%;
+    margin: auto;
+   
+}
+
+table, td, th {
+    border-collapse: collapse;
+}
+
+td, th {
+    height: 30px;
+    padding: 5px;
+}
+
+/* syle tableauUn */
+
+#tableauUn {
+    margin-bottom: 55px;
+}
+
+#tableauUn th {
+    background: rgb(233, 88, 173);
+    text-align-last: left;
+}
+
+#tableauUn tr:nth-of-type(even) {
+    background: rgb(146, 52, 118);
+}
+
+#tableauUn tr:nth-of-type(odd) {
+    background: rgb(119, 28, 71);
+}
+
+#tableauUn caption {
+    background: rgb(226, 71, 123);
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 3em;
+    color: rgb(221, 148, 182);
+}
+
+
+
+
+/* style tableauDeux */
+
+
+#tableauDeux {
+    margin-bottom: 55px;
+}
+
+#tableauDeux th {
+    background: rgb(153, 143, 197);
+    text-align-last: left;
+}
+
+#tableauDeux tr:nth-of-type(even) {
+    background: rgb(65, 48, 129);
+}
+
+#tableauDeux tr:nth-of-type(odd) {
+    background: rgb(141, 99, 238);
+}
+
+#tableauDeux caption {
+    background: rgb(104, 62, 218);
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 3em;
+    color: rgb(165, 164, 185);
+}
+

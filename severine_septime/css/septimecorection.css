@@ -1,0 +1,239 @@
+body {
+    font-family: 'Cormorant Garamond';
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.conteneur-principale {
+    width: 65%;/* ou 1000px */
+    margin: 0 auto;
+    background: rgb(231, 230, 230);
+}
+
+.clear {
+    clear: both;
+}
+
+/* style entete */
+
+header {
+    padding-top: 100px;/* augmente la taille de la boite */
+    text-align: center;/* centre tout le contenu */
+    height: 200px;
+    width: 400px;
+    margin: auto;/* on centre la boite header dans la page */
+}
+
+header p {
+    font-variant: small-caps;/* petit majuscule */
+    font-size: normal;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 60px;
+    letter-spacing: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* header a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.3em;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+} */
+
+header nav {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.3em;
+}
+
+header nav a:hover {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* conteneur-principale */
+
+/* section */
+
+.sous-section {
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding: 100px 15px 0 15px;
+    box-sizing: border-box;
+}
+
+#assiette .assiette {
+    background-image: url(../img/resto_04/assiette.png);
+    object-position: 50% 50%
+}
+
+
+#assiette .texte {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 200px;
+    box-sizing: border-box;
+}
+
+#assiette h2 {
+    font-style: italic;
+    padding: 0;
+    margin-bottom: -7px;
+    font-size: 1.4em;
+    text-align: right;
+    text-transform: none;
+    border-bottom: none;
+    letter-spacing: normal;
+}
+
+#assiette hr {
+    position: relative;
+    /* modifier la position de l'élément */
+    left: -225px;
+    width: 510px;
+    background: black;
+    z-index: 2; 
+}
+
+#assiette p {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 0;
+    letter-spacing: 2px;
+}
+
+/* salle */
+/* Toute les autre section */
+
+h2 {
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.note {
+    width: 240px;
+    background: #000;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding: 0 0 8px 15px;
+}
+
+/* pied de page */
+
+footer {
+    height: 300px;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 100px;
+    margin: auto;
+
+
+}
+
+.plan {
+    height: 200px;
+    background: no-repeat url(../img/resto_04/plan.png);
+    background-position: center;
+    /* placer l'image au centre du conteneur */
+    background-size: contain;
+    /* l'mage dois être adapter à la taille de son conteneur */
+    opacity: 0.1;
+    margin-bottom: -90px;
+}
+
+.caption {
+    
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    bottom: 80px;
+
+}
+
+footer h2 {
+
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 60px;
+    letter-spacing: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+address {
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-top: 2px;
+    font-size: 1em;
+}
+
+footer em {
+    font-style: italic;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+/* image en css */
+
+.resto_01 {
+    background: url(../img/resto_04/resto_01.jpg);
+    object-position: 50% 50%;
+}
+
+.resto_02 {
+    background: url(../img/resto_04/resto_02.jpg);
+    object-position: 50% 50%;
+}
+
+.resto_03 {
+    background: url(../img/resto_04/resto_03.jpg);
+    object-position: 50% 50%;
+}
+
+.resto_04 {
+    background: url(../img/resto_04/resto_04.jpg);
+    object-position: 50% 50%;
+}

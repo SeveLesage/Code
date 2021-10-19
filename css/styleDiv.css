@@ -1,0 +1,53 @@
+/* body {
+    background: rgb(240, 225, 211);
+}
+
+#boite {
+    width: 1000px;
+   
+}
+
+#boite div{
+    width: 200px;
+    height: 300px;
+    background-color: #e09a59;
+    color: white;
+}
+
+#boite p {
+    text-align: center;
+    padding: 10px;
+}
+
+.un {
+    width: 50%;
+    height: 300px;
+    float: left;
+
+}
+
+.deux {
+    width: 50%;
+    height: 300px;
+    float: right;
+}
+
+
+#sous-boite {
+    clear: both;
+    padding: 10px;
+} */
+
+div:nth-child(1),
+div:nth-child(2) {
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,346 @@
+/* style pour le premier site */
+
+
+/* /* RESET DU STYLE */
+
+
+/* Le reset permet de donner un comportement général, peu importe sur quel navigateur on se trouve  tous les élément se comporte de la meme maniére
+le plus connu des resets est celui  d'Eric Meyer */
+
+@charset "UTF-8";
+
+/* reset simple  */
+
+
+/* l'étoile signifie tout (all) */
+
+
+/* tous les éléments sont taillés de façon plus intuitive, ils concerveront la taille que nous leur donnerons */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* les typos */
+
+
+/*  A COPIER COLLER POUR LA FONT-FAMILY :
+
+font-family: 'Anton', sans-serif;
+font-family: 'Lemonada', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Courgette', cursive;
+font-family: 'Kaushan Script', cursive;    
+font-family: 'Berkshire Swash', cursive;    
+font-family: 'Righteous', cursive; */
+
+body {
+    background-image: url(../img/concrete-texture.png);
+    font-family: 'Oswald', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Une façon de déclarer les couleurs en variable */
+
+:root {
+    --bleu--canard: #2980B9;
+    --bleu-foncé: #2C3E50;
+    --gris-clair: #aaa;
+    --lavande: #89C;
+    --vert: #10828C;
+    --bleu-ciel: #6ACAFC;
+    --blanc: #fff;
+    --noir: #000;
+    --vert-clair: #A6D6C3;
+    --rouge-orangé: orangered;
+    --gris-transparent: rgba(178, 178, 178, 0.178);
+}
+
+
+/* style pour tous les titres */
+
+h1 {
+    font-size: 40px;
+    color: var(--bleu--canard);
+    /* pour déclarer les couleurs de :root variable var(--nom de la couleur declarer--); */
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--bleu-foncé);
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--gris-clair);
+}
+
+h2 i {
+    color: var(--lavande);
+    font-size: 150%;
+}
+
+h3 {
+    font-style: 22px;
+    color: var(--bleu-foncé);
+    padding: 15px;
+    text-shadow: 1px 1px 2px var(--gris-clair);
+}
+
+h4 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* style header */
+
+header {
+    height: 175px;
+    background-color: var(--bleu-foncé);
+}
+
+#logo {
+    float: left;
+    width: 25%;
+    background: var(--bleu-foncé);
+    padding: 15px;
+    text-align: center;
+}
+
+#slogan {
+    float: left;
+    width: 50%;
+    background: var(--bleu-foncé);
+    padding-top: 50px;
+}
+
+#social i {
+    background-color: var(--bleu-foncé);
+    color: var(--bleu--canard);
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--bleu--canard);
+    height: 70px;
+    border-bottom: 8px solid var(--bleu-ciel);
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    background: var(--bleu--canard);
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0;
+    border: 2px solid var(--blanc);
+    color: var(--bleu-foncé);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    /* transition sur le a fonctionne avec le a:hover cette propriete permet de 
+    controler la duree en seconde ou en milliseconde la durée avant affichage de l'animation avec le survol*/
+}
+
+nav a:hover {
+    color: var(--blanc);
+    background: var(--vert-clair);
+}
+
+.active {
+    color: var(--rouge-orangé);
+    background: var(--vert-clair);
+}
+
+
+/* les zones prncipales du site */
+
+main {
+    background-color: var(--gris-transparent);
+    width: 1200px;
+    margin: 0 auto;
+}
+
+aside {
+    margin: 15px 0 auto 10px;
+    min-height: 250px;
+    background: var(--vert-clair);
+    width: 20%;
+    float: left;
+    padding: 8px;
+    text-align: center;
+}
+
+#accueil {
+    float: left;
+    width: 75%;
+}
+
+section {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+footer {
+    min-height: 100px;
+    margin-top: 10px;
+    background: var(--bleu--canard);
+    color: var(--blanc);
+    text-align: center;
+}
+
+
+/* le bouton */
+
+button {
+    font-size: 350%;
+    background: transparent;
+    border: none;
+    color: var(--bleu-foncé);
+    /* position du bouton */
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+/* style pour la page 02_texte.html */
+
+blockquote {
+    font-family: 'Lemonada', cursive;
+    padding-left: 150px;
+    margin-bottom: 30px;
+}
+
+blockquote i {
+    font-size: 300%;
+    vertical-align: middle;
+    color: var(--bleu-ciel);
+}
+
+blockquote strong {
+    color: var(--bleu-foncé);
+}
+
+
+/* ici on demande a placer du contenu avant la balise cite */
+
+cite::before {
+    content: '<<';
+    /* entre les guillemet de la propriete content on ecriera le contenu que l'on veut afficher */
+}
+
+
+/* ici on demande a placer du contenu apres la balise cite */
+
+cite::after {
+    content: '>>';
+}

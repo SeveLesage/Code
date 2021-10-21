@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML, CSS, Colombbus, Séverine Lesage 2021">
     <!-- la balise meta author permet de signer le site -->
     <meta name="author" content="Séverine Lesage">
-    <title>Premier site - Texte</title>
+    <title>Premier site - Position</title>
     <!-- L'îcon embarquées depuis fontaweson -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,10 +60,10 @@
         <div class="ancreNav">
             <a href="01_index.html" title="Accueil">Accueil</a>
             <!-- class active pour montrer que l'on est dans la page affiché -->
-            <a href="02_texte.html" title="Texte" class="active">Texte</a>
+            <a href="02_texte.html" title="Texte">Texte</a>
             <a href="03_selecteurs.html" title="Sélecteurs">Sélecteurs</a>
             <a href="04_image.html" title="Images">Images</a>
-            <a href="05_position.html" title="Position">Position</a>
+            <a href="05_position.html" title="Position" class="active">Position</a>
             <a href="06_zoning.html" title="Zoning">Zoning</a>
             <a href="07_tableau.html" title="Tableau">Tableau</a>
             <a href="08_liste.html" title="Liste">Liste</a>
@@ -76,23 +76,81 @@
     </nav>
     <!-- fin de la navigation -->
     <main>
+        <h2>Position - <i class="fas fa-arrows-alt"></i></h2>
         <section>
-            <div>
-                <h2>Texte - <i class="fas fa-align-justify"></i></h2>
-                <blockquote><i class="fas fa-angle-double-left"></i>Ne nous prenons pas au sérieux, il n'y aura aucun survivant<i class="fas fa-angle-double-right"></i> <br>
-                    <strong>Alphonse Allais</strong></blockquote>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis pariatur nihil quae eum delectus numquam beatae nulla officiis. Ratione consectetur, nisi dolorum accusantium a voluptas dolore reiciendis impedit ducimus debitis. Eveniet
-                    laboriosam debitis non assumenda ullam suscipit nam unde impedit soluta! Dolorem quisquam rem, ullam, aliquid quis natus, minima expedita odit consequatur earum illum officiis culpa nobis perferendis modi veniam? Excepturi similique
-                    vitae asperiores totam ad consectetur natus autem, vero quos unde, optio ipsa eligendi nobis laborum saepe reiciendis modi quas minima consequuntur molestiae. Eius ab officia voluptatibus nesciunt autem. Quibusdam, alias maxime repudiandae
-                    tenetur asperiores, impedit molestias incidunt sit ab temporibus nemo obcaecati dolorem quis expedita. Consectetur accusantium necessitatibus ab quibusdam, sint eos maiores minus, vitae, quaerat odit numquam?</p>
+            <h3>Centrer un élément de type Bloc</h3>
+            <div class="centre"></div>
+        </section>
+        <!-- fin de la section 1 -->
+
+        <section>
+            <h3>Position absolute</h3>
+            <p>Un petit carré vert, regarde vers le haut</p>
+            <div class="absolute"></div>
+        </section>
+        <!-- fin de la section 2 -->
+
+        <section>
+            <h3>Position relative</h3>
+            <div class="relative">
+                <div>n°3</div>
             </div>
-            <!-- fin de la 1ere div -->
-            <article>
-                <h3>Je suis un titre de niveau 3</h3>
-                <cite>Vas, je ne te hais point</cite><br>
-                <strong>Corneille, Le Cid</strong>
+        </section>
+        <!-- fin de la section 3 -->
+
+        <section>
+            <h3>Position fixed</h3>
+            <p>cf. Le bouton flêche qui amène vers le haut de la page (il se trouve sur toutes les pages en bas à droite)</p>
+        </section>
+        <!-- fin de la section 4 -->
+
+        <section>
+            <h3>Les pourcentages</h3>
+            <div class="trente">30%</div>
+            <div class="cinquante">50%</div>
+            <div class="cent">100%</div>
+        </section>
+        <!-- fin de la section 5 -->
+
+        <section>
+            <h3>L'attribut Float</h3>
+            <!-- div*10{$} -->
+            <div class="box un">1</div>
+            <div class="box deux">2</div>
+            <div class="box trois">3</div>
+            <div class="box quatre">4</div>
+            <div class="box cinq clear">5</div>
+            <div class="box six">6</div>
+            <div class="box sept">7</div>
+            <div class="box huit clear">8</div>
+            <div class="box neuf">9</div>
+            <div class="box dix clear">10</div>
+        </section>
+        <div class="clear"></div>
+        <!-- fin de la section 6 -->
+
+        <section>
+            <h3>Autre exemple sur le Float</h3>
+            <div class="black clear"></div>
+            <div class="rouge"></div>
+            <div class="orange"></div>
+            <div class="orangeclair"></div>
+            <div class="jaune"></div>
+            <div class="black clear"></div>
+        </section>
+        <!-- fin de la section 7 -->
+
+        <section>
+            <h3>Flexbox</h3>
+            <article class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
             </article>
         </section>
+        <!-- fin de la section 8 -->
+
     </main>
     <!-- fin de la partie principale -->
     <div class="clear"></div>

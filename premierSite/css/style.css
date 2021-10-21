@@ -148,6 +148,7 @@ body {
     --vert-clair: #A6D6C3;
     --rouge-orangé: orangered;
     --gris-transparent: rgba(178, 178, 178, 0.178);
+    --blanc-transparent: rgba(255, 255, 255, 0.255);
 }
 
 
@@ -343,4 +344,287 @@ cite::before {
 
 cite::after {
     content: '>>';
+}
+
+
+/* Le styles pour la page 03_selecteurs.html */
+
+span {
+    font-style: italic;
+    color: yellow;
+}
+
+
+/* (*) {
+    padding: 15px;/* l'etoile est le selecteur universel => elle selectionne tous les elements present sur la page */
+
+
+/* } */
+
+
+/* article:first-child => on parle ici de tous les elements articles qui sont le premier descendant d'un element */
+
+
+/* article :first-child {
+    background-color: #fff;
+    ici on selection le premier enfant a l'interieur de l'article 
+} */
+
+
+/* ici on sélectionne d'abord le premier enfant (:first-child) a l'interieur du deuxieme article */
+
+article:nth-of-type(2) :first-child {
+    color: var(--rouge-orangé);
+}
+
+
+/* les selecteurs de classe */
+
+.danger {
+    background-color: var(--rouge-orangé);
+    color: var(--blanc);
+    padding: 15px;
+}
+
+.success {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: 15px;
+}
+
+
+/* les selecteurs d'identification */
+
+#articleDeux {
+    border: 1px solid var(--vert);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* les selecteurs d'attribut */
+
+
+/* quelque exemple d'attribut = class / id / title / href / src / alt / url / etc...
+Les attributs sont les termes qui viennent apporter des precisions à nos balises */
+
+a[title*='PSG'] {
+    text-decoration: none;
+    font-style: 25px;
+}
+
+
+/* * l'étoile avant le égal permet de dire que l'on veut viser tous les titles qui contiennent le terme 'psg' */
+
+
+/* style pour la page 04_images.html */
+
+.imageFond {
+    background: url(../img/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imageFond p {
+    width: 75%;
+    margin: 200px auto 250px auto;
+    background-color: var(--blanc-transparent);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 120%;
+}
+
+
+/* on cible image grace a l'attribut src et au chemin relatif */
+
+
+/* [] uniquement pour les attribut */
+
+img[src='img/toureiffel.jpg'] {
+    margin: auto;
+    display: block;
+    /* display block permet de transformer des éléments inline (en ligne) en éléments block */
+    padding: 30px;
+    background-color: var(--blanc);
+}
+
+
+/*  */
+
+.auCentre {
+    text-align: center;
+}
+
+.imageGolden {
+    margin: 20px;
+    border: 5px solid var(--blanc);
+    box-shadow: 4px 4px 4px var(--gris-transparent);
+    transition: 3s;
+    /* 4px horizontal 4px  vertical et 4px flou valeur -4px l'ombre de l'autre côté*/
+}
+
+.imageGolden:hover {
+    transform: rotate(-7deg);
+    border: 15px solid var(--blanc);
+}
+
+.rotation360:hover {
+    transform: rotate(360deg);
+}
+
+
+/* style pour la page 05_position.html  */
+
+.centre {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 187, 0);
+    margin: 0 auto;
+}
+
+.absolute {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+
+/* top left bottom pour placer position absolute */
+
+.relative {
+    width: 500px;
+    height: 500px;
+    background-color: var(--rouge-orangé);
+    position: relative;
+}
+
+.relative div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+}
+
+.trente {
+    width: 30%;
+    background-color: yellow;
+    color: orangered;
+    padding: 10px 20px;
+}
+
+.cinquante {
+    width: 50%;
+    background-color: rgb(238, 157, 51);
+    color: red;
+    padding: 10px 20px;
+}
+
+.cent {
+    width: 100%;
+    color: black;
+    background-color: red;
+    padding: 10px 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+
+
+/* .un,
+.deux,
+.trois,
+.quatre {
+    float: left;
+}
+
+.cinq {
+    clear: both;
+}
+
+.cinq,
+.six,
+.sept {
+    float: left;
+}
+
+.huit {
+    clear: both;
+}
+
+.huit,
+.neuf {
+    float: left;
+}
+
+.dix {
+    clear: both;
+} */
+
+.black {
+    width: 100%;
+    background-color: black;
+    padding: 30px 40px;
+}
+
+.rouge {
+    width: 25%;
+    height: 250px;
+    background-color: red;
+}
+
+.orange {
+    width: 25%;
+    height: 250px;
+    background-color: orangered;
+}
+
+.orangeclair {
+    width: 25%;
+    height: 250px;
+    background-color: orange;
+}
+
+.jaune {
+    width: 25%;
+    height: 250px;
+    background-color: yellow;
+}
+
+.rouge,
+.orange,
+.orangeclair,
+.jaune {
+    float: left;
+}
+
+
+/* flexbox */
+
+section .flex div {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    color: var(--blanc);
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+section .flex {
+    /* ici on demande a ce que le display soi en flex // element à placer sur le parent */
+    display: flex;
+    flex-direction: row-reverse;
+    /* grace à l'association de display flex et flex direction row-reverse = direction du flex ranger (row) inverser 4 3 2 1*/
 }

@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML, CSS, Colombbus, Séverine Lesage 2021">
     <!-- la balise meta author permet de signer le site -->
     <meta name="author" content="Séverine Lesage">
-    <title>Premier site - Texte</title>
+    <title>Premier site - Images</title>
     <!-- L'îcon embarquées depuis fontaweson -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,9 +60,9 @@
         <div class="ancreNav">
             <a href="01_index.html" title="Accueil">Accueil</a>
             <!-- class active pour montrer que l'on est dans la page affiché -->
-            <a href="02_texte.html" title="Texte" class="active">Texte</a>
+            <a href="02_texte.html" title="Texte">Texte</a>
             <a href="03_selecteurs.html" title="Sélecteurs">Sélecteurs</a>
-            <a href="04_image.html" title="Images">Images</a>
+            <a href="04_image.html" title="Images" class="active">Images</a>
             <a href="05_position.html" title="Position">Position</a>
             <a href="06_zoning.html" title="Zoning">Zoning</a>
             <a href="07_tableau.html" title="Tableau">Tableau</a>
@@ -76,23 +76,28 @@
     </nav>
     <!-- fin de la navigation -->
     <main>
-        <section>
-            <div>
-                <h2>Texte - <i class="fas fa-align-justify"></i></h2>
-                <blockquote><i class="fas fa-angle-double-left"></i>Ne nous prenons pas au sérieux, il n'y aura aucun survivant<i class="fas fa-angle-double-right"></i> <br>
-                    <strong>Alphonse Allais</strong></blockquote>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis pariatur nihil quae eum delectus numquam beatae nulla officiis. Ratione consectetur, nisi dolorum accusantium a voluptas dolore reiciendis impedit ducimus debitis. Eveniet
-                    laboriosam debitis non assumenda ullam suscipit nam unde impedit soluta! Dolorem quisquam rem, ullam, aliquid quis natus, minima expedita odit consequatur earum illum officiis culpa nobis perferendis modi veniam? Excepturi similique
-                    vitae asperiores totam ad consectetur natus autem, vero quos unde, optio ipsa eligendi nobis laborum saepe reiciendis modi quas minima consequuntur molestiae. Eius ab officia voluptatibus nesciunt autem. Quibusdam, alias maxime repudiandae
-                    tenetur asperiores, impedit molestias incidunt sit ab temporibus nemo obcaecati dolorem quis expedita. Consectetur accusantium necessitatibus ab quibusdam, sint eos maiores minus, vitae, quaerat odit numquam?</p>
-            </div>
-            <!-- fin de la 1ere div -->
-            <article>
-                <h3>Je suis un titre de niveau 3</h3>
-                <cite>Vas, je ne te hais point</cite><br>
-                <strong>Corneille, Le Cid</strong>
-            </article>
+        <h2>Images - <i class="fas fa-images"></i></h2>
+        <section class="imageFond">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt distinctio odit officiis incidunt totam accusantium. Eveniet fuga voluptas earum quasi, perspiciatis iste ad voluptatem suscipit sunt molestias ipsa deleniti nulla. Atque, quis!
+                Repellendus voluptates autem, sapiente praesentium dolores quo! Incidunt consequatur velit, dolores eius illum iusto quos unde itaque odio illo, non ea expedita molestias debitis modi explicabo ipsam sunt.
+            </p>
         </section>
+        <!-- fin de la section -->
+
+        <section>
+            <h3>Une images dans le HTML</h3>
+            <img src="img/toureiffel.jpg" alt="photo tour Eiffle">
+        </section>
+        <!-- fin section 2 -->
+
+        <section class="auCentre">
+            <h3>Image dans le HTML avec des effets en CSS</h3>
+            <img src="img/image.jpg" alt="San francisco : le Golden Bridge" class="imageGolden">
+            <img src="img/image.jpg" alt="San francisco : le Golden Bridge" class="imageGolden">
+            <img src="img/image.jpg" alt="San francisco : le Golden Bridge" class="imageGolden rotation360">
+        </section>
+        <!-- fin section 3 -->
+
     </main>
     <!-- fin de la partie principale -->
     <div class="clear"></div>

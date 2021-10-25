@@ -122,7 +122,8 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Courgette', cursive;
 font-family: 'Kaushan Script', cursive;    
 font-family: 'Berkshire Swash', cursive;    
-font-family: 'Righteous', cursive; */
+font-family: 'Righteous', cursive;
+font-family: 'Bad Script' */
 
 body {
     background-image: url(../img/concrete-texture.png);
@@ -627,4 +628,310 @@ section .flex {
     display: flex;
     flex-direction: row-reverse;
     /* grace à l'association de display flex et flex direction row-reverse = direction du flex ranger (row) inverser 4 3 2 1*/
+}
+
+
+/* LE STYLE PAGE 06_zoning.html */
+
+
+/* Zoning1 */
+
+#zoning1 {
+    background-color: #333;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.7em;
+    padding: 0;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#zoning1 header {
+    height: 70px;
+    background-color: #f7f39a;
+}
+
+#zoning1 header p {
+    font-size: 1.9em;
+}
+
+#zoning1 aside {
+    padding: 0;
+    margin: 0;
+    height: 450px;
+    width: 20%;
+    float: left;
+    background-color: #e0d501;
+}
+
+#zoning1 section {
+    padding: 0;
+    margin: 0;
+    height: 450px;
+    width: 80%;
+    float: left;
+    background-color: #faf8d1;
+}
+
+
+/* Zoning2 */
+
+#zoning2 {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+    color: rgb(48, 10, 48);
+    padding: 0;
+    font-family: 'Bad script';
+    border: 5px double rgb(173, 72, 173);
+}
+
+#zoning2 header {
+    height: 70px;
+    background-color: rgb(173, 72, 173);
+}
+
+#zoning2 header p {
+    font-size: 1.5em;
+}
+
+#zoning2 aside {
+    padding: 10px;
+    margin: 0;
+    width: 100px;
+    height: 450px;
+    width: 20%;
+    float: left;
+    background-color: violet;
+}
+
+#zoning2 #zoneDroite {
+    padding: 10px;
+    margin: 0;
+    width: 100px;
+    height: 450px;
+    width: 20%;
+    float: right;
+    background-color: violet;
+}
+
+#zoning2 section {
+    padding: 10;
+    margin: 0;
+    height: 450px;
+    width: 60%;
+    float: left;
+    background-color: rgb(233, 175, 233);
+}
+
+#zoning2 footer {
+    background-color: rgb(173, 72, 173);
+    width: 795px;
+    margin: 0;
+    padding: 0;
+    color: rgb(48, 10, 48);
+}
+
+
+/* zoning2
+#zoning2
+width: 810px;
+margin: 0 auto;
+text-align: center;
+border: 5px double rgb(117, 59, 117);
+padding: 0;
+
+
+zoning2 aside 
+width 100px
+float left
+background color violet
+margin 0
+height 400px
+
+zoning2 section
+float left
+width 600px
+height 400px 
+background color violet
+margin 0
+color blanc
+
+zoning2 footer
+height 100px
+width 800px
+background color violet
+margin 0
+color noir
+
+*/
+
+
+/* style zoning 3 */
+
+#zoning3 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(235, 204, 209);
+    padding: 0;
+    font-family: 'Kaushan Script';
+    font-size: 1.6em;
+}
+
+#zoning3 section {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(224, 161, 172);
+    border-right: 2px solid rgb(163, 61, 78);
+    margin: 0;
+    float: right;
+}
+
+#zoning3 #droite {
+    border: none;
+}
+
+#zoning3 footer {
+    margin-top: 10px;
+    background-color: rgb(163, 61, 78);
+    color: black;
+}
+
+
+/*
+
+#zoning3 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(235, 204, 209);
+    font-family: 'Kaushan Script';
+    font-size: 1.6em;
+    padding: 0;
+}
+
+#zoning #gauche {
+    margin: 0;
+    float: left;
+    background color: couleur;
+    width: 398px;
+    height: 400px;
+    border-right: 2px solid couleur;
+
+#zoning #droite {
+    margin: 0;
+    float: left;
+    background color: couleur;
+    width: 400px;
+    height: 400px;
+}
+
+#zoning footer {
+    background color: couleur;
+    margin-top: 20px;
+}
+
+*/
+
+
+/* style zoning4 */
+
+#zoning4 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 0;
+}
+
+#zoning4 header {
+    height: 100px;
+    background-color: rgb(61, 61, 105);
+    margin-bottom: 0;
+}
+
+#zoning4 nav {
+    background-color: rgb(140, 140, 185);
+    height: 60px;
+    border: none;
+}
+
+#zoning4 section {
+    margin: 25px 15px;
+    background-color: rgb(68, 68, 94);
+    height: 500px;
+}
+
+#zoning4 footer {
+    background-color: rgb(45, 45, 66);
+    color: black;
+    height: 60px;
+}
+
+#zoning4 .heardernav {
+    /* inline block permet de considerer que notre element est toujours un bloc mais en ligne il fait maintenant la largeur de son contenu */
+    display: inline-block;
+    background-color: white;
+    color: grey;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+
+/* style zoning 5 */
+
+#zoning5 {
+    width: 800px;
+    margin: 0 auto;
+    background-color: var(--bleu-ciel);
+    text-align: center;
+    color: white;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+#zoning5 header {
+    height: 100px;
+    background-color: orange;
+    text-transform: uppercase;
+}
+
+#zoning5 nav {
+    height: 50px;
+    background-color: yellow;
+    text-transform: uppercase;
+    border: none;
+}
+
+#zoning5 section {
+    margin: 20px;
+    padding: 0;
+}
+
+#zoning5 .un,
+#zoning5 .deux,
+#zoning5 .trois,
+#zoning5 .quatre {
+    height: 250px;
+    width: 50%;
+    float: left;
+    line-height: 250px;
+}
+
+#zoning5 footer {
+    height: 100px;
+    background-color: orange;
+    text-transform: uppercase;
+}
+
+.un,
+.quatre {
+    background-color: orange;
+}
+
+.deux,
+.trois {
+    background-color: rgb(189, 162, 112);
 }

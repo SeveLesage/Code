@@ -1,0 +1,422 @@
+/* les couleurs : pour tous les endroits orange : #FF4F13
+                pour le premier bloc avec les images : #E6E6E6
+                pour le footer : #343434 */
+
+*/ html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* fin eric meyer */
+
+
+/* les couleurs : pour tous les endroits orange : #FF4F13
+pour le premier bloc avec les images : #E6E6E6
+pour le footer : #343434 
+*/
+
+
+/* style le contenu de base de la page */
+
+body {
+    width: 1500px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.header {
+    width: 1500px;
+    background: url(../img/header.png);
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*  style header */
+
+header {
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 10px;
+}
+
+header h1 span {
+    color: #FF4F13;
+}
+
+header img {
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* div menu */
+
+.menu {
+    height: 140px;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.menu nav a {
+    margin: 10px;
+}
+
+
+/* navigation */
+
+nav {
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 70px;
+    right: 200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:hover {
+    transition: 1s;
+    background-color: #FF4F13;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* citation */
+
+.citation {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.citation blockquote {
+    height: 100px;
+    background: url(../img/quote-open.png) no-repeat, url(../img/quote-close.png) no-repeat right bottom;
+    color: #FF4F13;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 30px 10px;
+    padding: 0;
+    font-family: 'Aclonica', sans-serif;
+}
+
+blockquote {
+    padding: 10px;
+}
+
+.citation blockquote figcaption {
+    text-align: center;
+    color: #FF4F13;
+    font-size: 0.8em;
+}
+
+
+/* style article avec img */
+
+.centre {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: #E6E6E6;
+    height: 400px;
+    width: 1500px;
+}
+
+.article h3 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 1em;
+}
+
+.article .service,
+.photo,
+.about {
+    float: left;
+    height: 360px;
+    width: 360px;
+    margin-top: 20px;
+    margin-left: 5px;
+    position: relative;
+    left: 50px;
+}
+
+.article img {
+    width: 360px;
+    height: 210px;
+}
+
+
+/* style objet */
+
+.objet {
+    width: 1100px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.objet h3 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 1em;
+}
+
+.objet aside {
+    position: relative;
+    width: 400px;
+    float: left;
+}
+
+.objet figure {
+    float: right;
+    margin: 10px;
+}
+
+.objet img {
+    width: 250px;
+    height: 250px;
+}
+
+.objet figcaption {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.objet figcaption cite {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* style landscapes */
+
+.landscapes {
+    width: 1100px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.landscapes h3 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 1em;
+}
+
+.landscapes aside {
+    position: relative;
+    width: 400px;
+    float: left;
+}
+
+.landscapes figure {
+    float: right;
+    margin: 10px;
+}
+
+.landscapes img {
+    width: 250px;
+    height: 250px;
+}
+
+.landscapes figcaption {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.landscapes figcaption cite {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* style footer */
+
+footer {
+    background: #343434;
+    color: white;
+    padding-top: 10px;
+    height: 100px;
+}
+
+footer .contact {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer {
+    margin-left: 280px;
+}
+
+
+/* icon reseau */
+
+.reseau i {
+    font-size: 1.8em;
+    color: #FF4F13;
+    padding: 10px;
+    position: relative;
+    left: 700px;
+    bottom: 90px;
+}

@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* fin reset eric mayer */
+
+
+/* des notions en plus dans le reset */
+
+* {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* fin reset */
+
+
+/* style generale de la page */
+
+
+/* declarer les couleurs en variable */
+
+:root {
+    --orange: #ff4f13;
+    --blanc: #fff;
+    --gris: #e6e6e6;
+    --texte-footer: #343434;
+}
+
+.center {
+    width: 960px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px 0;
+    color: var(--texte-footer);
+}
+
+
+/* font-family: 'aclonica', sans serif; */
+
+h1,
+h2,
+nav,
+blockquote p,
+figcaption {
+    font-family: 'aclonica', sans serif;
+}
+
+
+/* style header */
+
+header {
+    background: url(../img/header.png) repeat-x;
+    height: 140px;
+}
+
+h1 {
+    float: left;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: var(--orange);
+}
+
+
+/* exemple pour navigation */
+
+nav {
+    float: right;
+    margin-top: 35px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+li a:link,
+li a:visited {
+    text-decoration: none;
+    color: var(--blanc);
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+li a:hover {
+    background-color: var(--orange);
+}
+
+
+/* bloc de citation */
+
+blockquote {
+    background: url(../img/quote-open.png) no-repeat, url(../img/quote-close.png) no-repeat right bottom;
+    /* la premiere photo affiche à l'endroit normal et la seconde se mettre  droite en bas (right bottom) */
+    text-align: center;
+    color: var(--orange);
+    font-size: 36px;
+    margin: 30px auto;
+    padding: 40px 0;
+    width: 960px;
+}
+
+.auteur {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+
+/* style section bloc 1 */
+
+.bloc1 {
+    background: var(--gris);
+}
+
+.bloc1 article {
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+    line-height: 20px;
+}
+
+.bloc1 img {
+    max-width: 100%;
+}
+
+.bloc1 h2 {
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.bloc1 p {
+    padding: 2px 10px 0 0;
+}
+
+
+/* style section bloc 2 */
+
+
+/* zone 1 */
+
+.zone1 article,
+.zone1 figure {
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+
+/* zone 2 */
+
+.zone2 article,
+.zone2 figure {
+    float: left;
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+
+.bloc2 h2 {
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.bloc2 figure img {
+    border: 1px solid var(--gris);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+figcaption {
+    text-transform: uppercase;
+}
+
+figcaption span {
+    text-transform: capitalize;
+    /* capitalize => tous les mots prennent une majuscue suivie de minuscules (lowercase)  */
+    font-style: italic;
+    font-style: smaller;
+}
+
+.bloc2 article p {
+    margin-bottom: 10px;
+    padding: 2px 10px 0 0;
+}
+
+
+/* style footer */
+
+footer {
+    background: var(--texte-footer);
+}
+
+footer .center {
+    color: var(--blanc);
+}
+
+footer .center p {
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: italic;
+}
+
+.info,
+.reseaux {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: auto;
+}
+
+.reseaux {
+    margin-top: 40px;
+}
+
+i {
+    font-size: 2em;
+    color: var(--gris);
+    padding: 15px;
+}
+
+i:hover {
+    color: var(--orange);
+}

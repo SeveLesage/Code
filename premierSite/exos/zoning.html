@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoning</title>
+    <!-- style dans entete -->
+    <style>
+        main {
+            width: 1200px;
+            margin: 10px auto;
+            text-transform: uppercase;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: #98bdee;
+            margin: 0;
+        }
+        
+        nav {
+            width: 100%;
+            height: 100px;
+            background-color: #bfbfdb;
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+            padding: 5px;
+            letter-spacing: 1px;
+            font-style: 16px;
+        }
+        
+        img {
+            width: 150px;
+            height: 135px;
+        }
+        
+        #principale {
+            height: 250px;
+            background-color: #ebcdd2;
+            margin: auto;
+        }
+        
+        #principale p {
+            text-transform: none;
+        }
+        
+        #figureImg {
+            width: 700px;
+            height: 200px;
+            margin: auto;
+        }
+        
+        figure {
+            float: left;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        figcaption {
+            background-color: black;
+            color: white;
+            text-transform: none;
+            position: relative;
+            /* permet de deplacer l'élément (figcaption) par rapport a son parent  */
+            bottom: 15px;
+            /* on lui dit comment il ce déplace (left right bottom top) */
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 2px;
+        }
+        
+        footer {
+            width: 1200px;
+            height: 80px;
+            background-color: #98bdee;
+        }
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <p>header</p>
+        </header>
+        <nav>
+            <p>nav</p>
+        </nav>
+        <section id="principale">
+
+            <p>De bien beaux voiliers</p>
+            <div id="figureImg">
+                <figure class="voilierG">
+                    <img src="../img/voiliergonet.jpg" alt="photo voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <!-- fin premiere image -->
+
+                <figure class="voilierI">
+                    <img src="../img/voilierimage.jpg" alt="photo voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <!-- fin 2eme image -->
+
+                <figure class="voilierP">
+                    <img src="../img/voilierplaque.jpg" alt="photo voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+                <!-- fin 3eme image -->
+
+                <figure class="voilierT">
+                    <img src="../img/voiliertrinite.jpg" alt="photo voilier">
+                    <figcaption>légende</figcaption>
+                </figure>
+            </div>
+            <div class="clear"></div>
+            <!-- mettre le clear both sinon conflit plus de chose -->
+        </section>
+        <!-- fin section principale -->
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

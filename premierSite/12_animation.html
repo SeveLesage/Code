@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML, CSS, Colombbus, Justine Périnel, 2021">
     <!-- la balise meta author permet de signer le site -->
     <meta name="author" content="Justine Périnel">
-    <title>Premier site - Liens et menu</title>
+    <title>Premier site - Animations</title>
     <!-- Les icônes embarquées depuis FontAwesome -->
     <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
     <!-- typo -->
@@ -70,75 +70,35 @@
             <a href="06_zoning.html" title="Zoning">Zoning</a>
             <a href="07_tableau.html" title="Tableaux">Tableaux</a>
             <a href="08_liste.html" title="Listes">Listes</a>
-            <a href="09_liens_menu.html" title="Liens" class="active">Liens</a>
+            <a href="09_liens_menu.html" title="Liens">Liens</a>
             <a href="10_formulaire.html" title="Formulaire">Formulaire</a>
             <a href="11_multimedia.html" title="Multimédia">Multimédia</a>
-            <a href="12_animation.html" title="Animations">Animations</a>
+            <a href="12_animation.html" title="Animations" class="active">Animations</a>
             <a href="13_recap.html" title="Récapitulatif">Récapitulatif</a>
         </div>
     </nav>
     <!-- fin de la nav -->
 
     <main>
-        <h2>Liens et menu - <i class="fas fa-link"></i></h2>
+        <h2>Animations - <i class="fab fa-mixcloud"></i></h2>
 
-        <section class="ancre">
-            <h3>Les ancres</h3>
-            <a href="#liens">Les liens</a>
-            <a href="#menu">Menu simple</a>
-            <a href="#menuDeroulant">Menu déroulant</a>
-
+        <section>
+            <h3>Infobulles</h3>
+            <div class="infoBulle">
+                <p><a href="#">Passer la souris !<span>cours je suis une petite pop-up <i class="fas fa-comment-dots"></i></span></a></p>
+                <p><a href="#">Voila un autre exemple :) <span>Je suis l'infobulle</span></a></p>
+            </div>
         </section>
-        <br><br><br><br><br><br>
-        <section id="liens">
-            <h3>Les liens</h3>
-            <a href="https://www.psg.fr" target="/blank">Aller vers le site PSG</a>
-            <a href="docs/MW7521 TERRAGE-emploi du temps 2021_2022 V1 (1).pdf" target="/blank">Télécharger le planning provisoire</a>
-        </section>
-        <br><br><br><br><br><br>
-
-        <section id="menu">
-            <h3>Un menu simple</h3>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Parcours</a></li>
-                    <li><a href="#">Réalisations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
+        <section>
+            <h3>Effets sur des images au survol</h3>
+            <ul class="imgEffets">
+                <li><img src="img/survol_img1.jpg" alt="montagne"></li>
+                <li><img src="img/survol_img2.jpg" alt="lac"></li>
+                <li><img src="img/survol_img3.jpg" alt="mer"></li>
+                <li><img src="img/survol_img4.jpg" alt="forêt"></li>
+            </ul>
         </section>
 
-        <br><br><br><br><br><br>
-        <section id="menuDeroulant">
-            <h3>Menu déroulant</h3>
-            <nav>
-                <ul class="niveau1">
-                    <li><a href="#">Accueil</a></li>
-                    <li class="sousMenu"><a href="#">Formations</a>
-                        <!-- en dessous pour sous menu -->
-                        <ul class="niveau2">
-                            <li><a href="#">Etudiants</a></li>
-                            <li><a href="#">Emploi du temps</a></li>
-                            <li><a href="#">Recherche d'emploi</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Informations</a></li>
-                    <li class="sousMenu"><a href="">Cours</a>
-                        <ul class="niveau2">
-                            <li><a href="#">HTML/CSS</a></li>
-                            <li><a href="#">Javascript</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">MySQL</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Mon CV</a></li>
-                </ul>
-            </nav>
-        </section>
-        <br><br><br><br><br><br>
     </main>
 
     <div class="clear"></div>

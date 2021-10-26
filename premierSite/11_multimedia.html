@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML, CSS, Colombbus, Justine Périnel, 2021">
     <!-- la balise meta author permet de signer le site -->
     <meta name="author" content="Justine Périnel">
-    <title>Premier site - Liens et menu</title>
+    <title>Premier site - Multimédia</title>
     <!-- Les icônes embarquées depuis FontAwesome -->
     <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
     <!-- typo -->
@@ -70,9 +70,9 @@
             <a href="06_zoning.html" title="Zoning">Zoning</a>
             <a href="07_tableau.html" title="Tableaux">Tableaux</a>
             <a href="08_liste.html" title="Listes">Listes</a>
-            <a href="09_liens_menu.html" title="Liens" class="active">Liens</a>
+            <a href="09_liens_menu.html" title="Liens">Liens</a>
             <a href="10_formulaire.html" title="Formulaire">Formulaire</a>
-            <a href="11_multimedia.html" title="Multimédia">Multimédia</a>
+            <a href="11_multimedia.html" title="Multimédia" class="active">Multimédia</a>
             <a href="12_animation.html" title="Animations">Animations</a>
             <a href="13_recap.html" title="Récapitulatif">Récapitulatif</a>
         </div>
@@ -80,65 +80,48 @@
     <!-- fin de la nav -->
 
     <main>
-        <h2>Liens et menu - <i class="fas fa-link"></i></h2>
-
-        <section class="ancre">
-            <h3>Les ancres</h3>
-            <a href="#liens">Les liens</a>
-            <a href="#menu">Menu simple</a>
-            <a href="#menuDeroulant">Menu déroulant</a>
-
+        <h2>Multimédia - <i class="fas fa-photo-video"></i></h2>
+        <section class="videoFond">
+            <div class="videoTexte">
+                <video autoplay loop controls>
+                    <!-- l'attribut autoplay permet de lire automatiquement la vidéo 
+                    Mais attention, le navigateurs web, par défaut bloque le plus souvent les contenus audio et vidéo.
+                    C'est la raison pour laquelle on utilise l'attribut controls ils affiche les outils de lecture ainsi que la barre de controle
+                ce qui permet à l'utilisateur de lire la video.
+            l'attribut loop quand à lui va mettre la video en boucle (on a loop) -->
+                    <source src="videos/videoBackground.mp4">
+                </video>
+                <p>Une vidéo en noir et blanc</p>
+            </div>
         </section>
-        <br><br><br><br><br><br>
-        <section id="liens">
-            <h3>Les liens</h3>
-            <a href="https://www.psg.fr" target="/blank">Aller vers le site PSG</a>
-            <a href="docs/MW7521 TERRAGE-emploi du temps 2021_2022 V1 (1).pdf" target="/blank">Télécharger le planning provisoire</a>
-        </section>
-        <br><br><br><br><br><br>
+        <br><br><br><br>
+        <hr>
 
-        <section id="menu">
-            <h3>Un menu simple</h3>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Parcours</a></li>
-                    <li><a href="#">Réalisations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
+        <section>
+            <h3>Une video intégrée depuis youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/luogZ8wXOP4?start=10" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
-        <br><br><br><br><br><br>
-        <section id="menuDeroulant">
-            <h3>Menu déroulant</h3>
-            <nav>
-                <ul class="niveau1">
-                    <li><a href="#">Accueil</a></li>
-                    <li class="sousMenu"><a href="#">Formations</a>
-                        <!-- en dessous pour sous menu -->
-                        <ul class="niveau2">
-                            <li><a href="#">Etudiants</a></li>
-                            <li><a href="#">Emploi du temps</a></li>
-                            <li><a href="#">Recherche d'emploi</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Informations</a></li>
-                    <li class="sousMenu"><a href="">Cours</a>
-                        <ul class="niveau2">
-                            <li><a href="#">HTML/CSS</a></li>
-                            <li><a href="#">Javascript</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">MySQL</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Mon CV</a></li>
-                </ul>
-            </nav>
+        <section class="audio">
+            <h3>Les sons</h3>
+            <h4>Format .mp3</h4>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls>
+            <p>Votre navigateur de prend pas en charge la balise audio</p>
+            </audio>
+            <h4>Format .ogg</h4>
+            <audio src="audio/son.ogg" controls>
+                <p>Votre navigateur de prend pas en charge la balise audio</p>
+            </audio>
         </section>
-        <br><br><br><br><br><br>
+        <br><br><br>
+        <hr>
+
+        <section>
+            <h3>Une carte intégrée</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.90203941115!2d2.2913514883708976!3d48.85391001859116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1635250968967!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
     </main>
 
     <div class="clear"></div>

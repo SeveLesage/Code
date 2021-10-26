@@ -11,7 +11,7 @@
     <meta name="keywords" content="HTML, CSS, Colombbus, Justine Périnel, 2021">
     <!-- la balise meta author permet de signer le site -->
     <meta name="author" content="Justine Périnel">
-    <title>Premier site - Liens et menu</title>
+    <title>Premier site - Formulaire</title>
     <!-- Les icônes embarquées depuis FontAwesome -->
     <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
     <!-- typo -->
@@ -70,8 +70,8 @@
             <a href="06_zoning.html" title="Zoning">Zoning</a>
             <a href="07_tableau.html" title="Tableaux">Tableaux</a>
             <a href="08_liste.html" title="Listes">Listes</a>
-            <a href="09_liens_menu.html" title="Liens" class="active">Liens</a>
-            <a href="10_formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="09_liens_menu.html" title="Liens">Liens</a>
+            <a href="10_formulaire.html" title="Formulaire" class="active">Formulaire</a>
             <a href="11_multimedia.html" title="Multimédia">Multimédia</a>
             <a href="12_animation.html" title="Animations">Animations</a>
             <a href="13_recap.html" title="Récapitulatif">Récapitulatif</a>
@@ -80,65 +80,64 @@
     <!-- fin de la nav -->
 
     <main>
-        <h2>Liens et menu - <i class="fas fa-link"></i></h2>
+        <h2>Formulaire - <i class="fab fa-wpforms"></i></h2>
 
-        <section class="ancre">
-            <h3>Les ancres</h3>
-            <a href="#liens">Les liens</a>
-            <a href="#menu">Menu simple</a>
-            <a href="#menuDeroulant">Menu déroulant</a>
+        <form action="" method="POST">
+            <!-- l'attribut action est l'url de destination des informations récoltées => adresse URL ou un fichier en PHP 
+            Il peut rester vide pour l'istant-->
+            <!-- l'attribut method est la façon de faire circuler les données :  POST ou GET (envoyer ou recuperer) -->
+            <label for="pseudo">Pseudo *</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required> <br>
+            <label for="prenom">Prénom *</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required><br>
+            <label for="nom">Nom *</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom de famille" required><br>
+            <!-- required est un attribut qui ne prends pas de valeur il signifie qu'il est obligatoire de remplir le champs pour envoyer le formulaire -->
+            <label for="password">Mot de passe *</label>
+            <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br>
+            <!-- la type="password" va permettre de masquer les informations quisont taper -->
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Votre Email" required><br>
+            <label for="cv">CV en pdf *</label>
+            <input type="file" name="cv" id="docpicker" accept=".pdf"><br>
 
-        </section>
-        <br><br><br><br><br><br>
-        <section id="liens">
-            <h3>Les liens</h3>
-            <a href="https://www.psg.fr" target="/blank">Aller vers le site PSG</a>
-            <a href="docs/MW7521 TERRAGE-emploi du temps 2021_2022 V1 (1).pdf" target="/blank">Télécharger le planning provisoire</a>
-        </section>
-        <br><br><br><br><br><br>
 
-        <section id="menu">
-            <h3>Un menu simple</h3>
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Parcours</a></li>
-                    <li><a href="#">Réalisations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <p>Quels sont vos fruits préférés ?</p>
+            <!-- Les checkbox ont le même nom(name), grâce auquel nous passerons plus tard les infos dans un tableau (en PHP) -->
 
-        </section>
+            <label for="orange">Orange</label>
+            <input type="checkbox" name="fruits[]" id="orange" value="orange">
 
-        <br><br><br><br><br><br>
-        <section id="menuDeroulant">
-            <h3>Menu déroulant</h3>
-            <nav>
-                <ul class="niveau1">
-                    <li><a href="#">Accueil</a></li>
-                    <li class="sousMenu"><a href="#">Formations</a>
-                        <!-- en dessous pour sous menu -->
-                        <ul class="niveau2">
-                            <li><a href="#">Etudiants</a></li>
-                            <li><a href="#">Emploi du temps</a></li>
-                            <li><a href="#">Recherche d'emploi</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Informations</a></li>
-                    <li class="sousMenu"><a href="">Cours</a>
-                        <ul class="niveau2">
-                            <li><a href="#">HTML/CSS</a></li>
-                            <li><a href="#">Javascript</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">PHP</a></li>
-                            <li><a href="#">MySQL</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Mon CV</a></li>
-                </ul>
-            </nav>
-        </section>
-        <br><br><br><br><br><br>
+            <label for="fraise">Fraise</label>
+            <input type="checkbox" name="fruits[]" id="fraise" value="fraise">
+
+            <label for="kiwi">Kiwi</label>
+            <input type="checkbox" name="fruits[]" id="kiwi" value="kiwi">
+
+            <label for="banane">Banane</label>
+            <input type="checkbox" name="fruits[]" id="banane" value="banane">
+
+            <br>
+
+            <p>Choisissez le légume que vous n'aimez pas :</p>
+
+            <label for="legume"></label>
+            <select name="legume" id="legume">
+            <option value=""> ---- </option>
+            <option value="Choux de brusxelles">Chou de bruxelles</option>
+            <option value="épinard">Epinards</option>
+            <option value="céleri">Céleri</option>
+            <option value="poireau">Poireau</option>
+            <option value="petits pois">Petits pois</option>
+        </select><br>
+
+            <label for="message">Votre commentaire</label><br>
+            <textarea name="message" id="message" cols="50" rows="10" placeholder="Dites nous ce que vous pensez !"></textarea>
+            <br>
+
+            <input type="submit" name="Envoyer" class="bouton">
+            <input type="reset" name="Annuler" class="bouton">
+        </form>
     </main>
 
     <div class="clear"></div>

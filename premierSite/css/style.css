@@ -999,3 +999,303 @@ dt {
 
 
 /* fin de la page 08_liste.html */
+
+
+/* style page 09_liens_menu.html */
+
+.ancre {
+    text-align: center;
+    padding: 100px;
+}
+
+.ancre a {
+    margin: 8px;
+    padding: 5px 10px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.ancre a:hover {
+    box-shadow: 2px 2px 5px var(--bleu-foncé);
+}
+
+
+/* #menu = menu simple */
+
+#menu nav {
+    background: transparent;
+    border: none;
+}
+
+#menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu nav a {
+    padding: 10px;
+    color: var(--bleu-foncé);
+    text-decoration: none;
+    background-color: var(--gris-clair);
+    transition: 0.75s;
+}
+
+#menu nav a:hover {
+    background-color: var(--bleu-foncé);
+    color: var(--gris-clair);
+}
+
+
+/* #menuDeroulant = menu déroulant */
+
+#menuDeroulant {
+    height: 650px;
+}
+
+#menuDeroulant nav {
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+    /* centré un block */
+}
+
+#menuDeroulant nav ul li {
+    list-style: none;
+    width: 20%;
+    float: left;
+}
+
+#menuDeroulant ul ul {
+    display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+    border-top: 1px solid var(--bleu-foncé);
+    width: 100%;
+}
+
+#menuDeroulant nav li {
+    background: var(--gris-clair);
+}
+
+#menuDeroulant nav li a {
+    display: block;
+    padding: 4px 0;
+}
+
+#menuDeroulant ul {
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+    display: block;
+}
+
+
+/* fin liens menu */
+
+
+/* page 10 formulaire */
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: violet;
+    color: var(--bleu-foncé);
+}
+
+label {
+    margin: 20px 10px;
+}
+
+textarea {
+    resize: none;
+    /* on ne peut plus le redimensionner */
+}
+
+label[for='orange'],
+label[for='banane'],
+label[for='fraise'],
+label[for='kiwi'] {
+    background-color: var(--rouge-orangé);
+    color: yellowgreen;
+}
+
+.bouton {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+/* Fin formulaire */
+
+
+/* style multimédia 11 */
+
+.videoFond {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.videoFond video {
+    width: 80%;
+    position: absolute;
+    z-index: 1;
+}
+
+.videoTexte {
+    /* on decale le texte par rapport à sa position normal */
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.videoFond p {
+    z-index: 2;
+    position: absolute;
+    width: 500px;
+    margin: auto;
+    background: var(--blanc-transparent);
+    left: 250px;
+    top: 150px;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    border-radius: 15px;
+}
+
+
+/* fin audio et vidéo */
+
+
+/* style page 12_animation.html */
+
+
+/* section infoBulles */
+
+.infoBulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background-color: #444;
+    box-shadow: 0 0 50px #222 inset;
+}
+
+
+/* inset signifie que l'ombre porter est à l'interieur de la boite */
+
+.infoBulle p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.infoBulle a {
+    color: rgb(30, 47, 97);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+    color: #ccc;
+    background: var(--vert);
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 var(--blanc-transparent);
+    cursor: help;
+}
+
+
+/* ici on s'occupe du style du cursor avec un ? pour help */
+
+.infoBulle a span {
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background-color: var(--gris-clair);
+    border-radius: 13px;
+    opacity: 0;
+    /* on rend transparent le span */
+    color: #444;
+    text-shadow: none;
+    transition: 3s ease-in;
+    /* scale signifie echelle /// ici 0 signifie qu'elle est invisible */
+    /* rotate signifie qu'on l'incline de 12deg sur l'axe vertical */
+    transform: scale(0) rotateZ(-12deg);
+}
+
+.infoBulle a:hover span {
+    opacity: 1;
+    /* le span reprend sa taille normale et se remet droit sur l'axe */
+    transform: scale(1) rotateZ(0);
+}
+
+.infoBulle a span::before {
+    /* ce truc sert à compléter le dessin de l'infoBulle */
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 7px;
+    border-bottom: 6px solid rgba(141, 141, 141, 0.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+
+/* les effets pour les images */
+
+.imgEffets {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.imgEffets li {
+    /* ici on fabrique les carreé qui contiennent les images */
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+    float: left;
+    list-style: none;
+}
+
+.imgEffets li:nth-child(3) {
+    clear: both;
+    /* le 3e li est clear:both */
+}
+
+.imgEffets img {
+    /* o controle la position des evenement car on joue sur leur empilement */
+    position: absolute;
+    /* toutes les images sont en bas */
+    z-index: 1;
+    height: 150px;
+    /* on case les images dans les un bloc de 150px */
+    box-shadow: 0 0 3px black;
+    transition: 3s ease;
+}
+
+.imgEffets li:hover img {
+    z-index: 2;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px black;
+}
+
+.imgEffets:hover li:not(:hover) img {
+    filter: grayscale(1) blur(1px);
+    /* ici quand on survole la  ul  
+    .imgEffets mais qu'on ne survol pas une image alors elle sera dans une echelle de gris et elle sera légerement floutée */
+}

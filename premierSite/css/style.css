@@ -935,3 +935,67 @@ color noir
 .trois {
     background-color: rgb(189, 162, 112);
 }
+
+
+/* fin page zoning */
+
+
+/* page tableaux.html */
+
+.tableau1 table {
+    border: 2px solid rgb(153, 79, 92);
+    border-collapse: collapse;
+    margin: auto;
+    padding: 5px;
+    width: 80%;
+}
+
+.tableau1 td {
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableau1 tbody td {
+    text-align-last: left;
+}
+
+.tableau1 thead,
+.tableau1 tfoot {
+    background-color: rgb(109, 36, 109);
+    border: 2px solid var(--bleu--canard);
+    text-align: center;
+}
+
+.tableau1 caption {
+    background-color: rgb(134, 56, 134);
+    border: 2px solid var(--bleu--canard);
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--blanc);
+    line-height: 50px;
+}
+
+
+/* fin de la page tableaux.html */
+
+
+/* style page 08_liste.html */
+
+.fromage li {
+    list-style: disc url(../img/cheese.png) inside;
+}
+
+.cookie li {
+    list-style-type: upper-roman;
+}
+
+dt {
+    font-weight: 900;
+    color: rgb(142, 52, 160);
+}
+
+
+/* fin de la page 08_liste.html */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- La description est indispensable pour les moteurs de recherche et s'affiche sur les résultats -->
+    <meta name="description" content="Mon premier site avec Colombbus : Terrage 2021/2022">
+    <!-- Les mots clefs sont utiles pour les moteurs de recherche mais ils sont de moins en moins utilisés -->
+    <meta name="keywords" content="HTML, CSS, Colombbus, Justine Périnel, 2021">
+    <!-- la balise meta author permet de signer le site -->
+    <meta name="author" content="Justine Périnel">
+    <title>Premier site - Liste</title>
+    <!-- Les icônes embarquées depuis FontAwesome -->
+    <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
+    <!-- typo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Berkshire+Swash&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- ma feuille de style en externe -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="Le logo de PremierSite">
+        </div>
+        <!-- fin de la div 1 -->
+
+        <div id="slogan">
+            <a href="01_index.html">
+                <h1>Mon premier site en HTML5 et CSS3</h1>
+            </a>
+        </div>
+        <!-- fin de la div 2 -->
+
+        <div id="social">
+            <!-- ici je ne veux pas que les liens s'affichent sur du texte mais sur une icône -->
+            <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <!-- fin de la div 3 -->
+
+        <div class="clear"></div>
+        <!-- la div pour reprendre un comportement normal -->
+    </header>
+    <!-- fin de l'en-tête -->
+
+    <nav>
+        <!-- .ancreNav>a*13  -->
+        <div class="ancreNav">
+            <a href="01_index.html" title="Accueil">Accueil</a>
+            <a href="02_texte.html" title="Texte">Texte</a>
+            <a href="03_selecteurs.html" title="Sélecteurs">Sélecteurs</a>
+            <a href="04_image.html" title="Images">Images</a>
+            <a href="05_position.html" title="Position">Position</a>
+            <a href="06_zoning.html" title="Zoning">Zoning</a>
+            <a href="07_tableau.html" title="Tableaux">Tableaux</a>
+            <a href="08_liste.html" title="Listes" class="active">Listes</a>
+            <a href="09_liens_menu.html" title="Liens">Liens</a>
+            <a href="10_formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="11_multimedia.html" title="Multimédia">Multimédia</a>
+            <a href="12_animation.html" title="Animations">Animations</a>
+            <a href="13_recap.html" title="Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+    <!-- fin de la nav -->
+
+    <main>
+        <h2>Listes - <i class="fas fa-list-ul"></i></h2>
+
+        <section class="fromage">
+            <h3>
+                liste de fromage
+            </h3>
+            <ul>
+                <li>Camenbert</li>
+                <li>Mozarella</li>
+                <li>Boursin</li>
+                <li>Comté</li>
+                <li>Chavroux</li>
+                <li>Brie</li>
+            </ul>
+
+        </section>
+        <section class="cookie">
+            <h3>
+                Rcette de cookies
+            </h3>
+            <ol>
+                <li>Préchauffer le four à 150°</li>
+                <li>Mélanger les sucres</li>
+                <li>Faire fondre le beurre et mélanger les sucres</li>
+                <li>Ajoutez l'oeuf, la levure et le sel</li>
+                <li>Ajoutez les pepites de chocolat</li>
+                <li>Faire des petits tas et les faire cuire pendant 13min</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Liste de définitions</h3>
+            <dl>
+                <dt>Terme à défini</dt>
+                <dd>Définition du terme qui se trouve au-dessus</dd>
+            </dl>
+
+        </section>
+
+    </main>
+
+    <div class="clear"></div>
+    <!-- .clear -->
+
+    <a href="#logo"><button type="button"><i class="fas fa-arrow-circle-up"></i></button></a>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur error culpa id veniam aliquam dignissimos vero cum repellendus atque voluptatum? Animi eveniet, qui assumenda non velit vero obcaecati quia nulla?</p>
+    </footer>
+
+</body>
+
+</html>

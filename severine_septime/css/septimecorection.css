@@ -6,7 +6,8 @@ body {
 }
 
 .conteneur-principale {
-    width: 65%;/* ou 1000px */
+    width: 65%;
+    /* ou 1000px */
     margin: 0 auto;
     background: rgb(231, 230, 230);
 }
@@ -15,18 +16,23 @@ body {
     clear: both;
 }
 
+
 /* style entete */
 
 header {
-    padding-top: 100px;/* augmente la taille de la boite */
-    text-align: center;/* centre tout le contenu */
+    padding-top: 100px;
+    /* augmente la taille de la boite */
+    text-align: center;
+    /* centre tout le contenu */
     height: 200px;
     width: 400px;
-    margin: auto;/* on centre la boite header dans la page */
+    margin: auto;
+    /* on centre la boite header dans la page */
 }
 
 header p {
-    font-variant: small-caps;/* petit majuscule */
+    font-variant: small-caps;
+    /* petit majuscule */
     font-size: normal;
     margin-bottom: 10px;
     font-weight: bold;
@@ -43,6 +49,7 @@ header h1 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
 
 /* header a {
     text-decoration: none;
@@ -72,7 +79,9 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+
 /* conteneur-principale */
+
 
 /* section */
 
@@ -88,7 +97,6 @@ header nav a:hover {
     background-image: url(../img/resto_04/assiette.png);
     object-position: 50% 50%
 }
-
 
 #assiette .texte {
     margin-top: 20px;
@@ -114,7 +122,7 @@ header nav a:hover {
     left: -225px;
     width: 510px;
     background: black;
-    z-index: 2; 
+    z-index: 2;
 }
 
 #assiette p {
@@ -126,7 +134,10 @@ header nav a:hover {
     letter-spacing: 2px;
 }
 
+
 /* salle */
+
+
 /* Toute les autre section */
 
 h2 {
@@ -154,6 +165,7 @@ p {
     padding: 0 0 8px 15px;
 }
 
+
 /* pied de page */
 
 footer {
@@ -162,8 +174,6 @@ footer {
     width: 400px;
     padding-bottom: 100px;
     margin: auto;
-
-
 }
 
 .plan {
@@ -178,7 +188,6 @@ footer {
 }
 
 .caption {
-    
     font-size: 1.4em;
     letter-spacing: 1px;
     font-variant: small-caps;
@@ -186,11 +195,9 @@ footer {
     font-style: normal;
     position: relative;
     bottom: 80px;
-
 }
 
 footer h2 {
-
     text-transform: uppercase;
     margin-top: 0;
     font-size: 2.8em;
@@ -215,6 +222,7 @@ footer em {
     line-height: 26px;
     font-weight: bold;
 }
+
 
 /* image en css */
 

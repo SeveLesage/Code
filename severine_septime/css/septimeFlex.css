@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond';
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.conteneur {
+    width: 65%;
+    /* ou 1000px */
+    margin: 0 auto;
+    background: rgb(231, 230, 230);
+}
+
+.padding {
+    padding: 100px 25px 0 25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* style entete */
+
+header {
+    padding-top: 100px;
+    /* augmente la taille de la boite */
+    text-align: center;
+    /* centre tout le contenu */
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    /* on centre la boite header dans la page */
+}
+
+header p {
+    font-variant: small-caps;
+    /* petit majuscule */
+    font-size: normal;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 60px;
+    letter-spacing: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* header a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.3em;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+} */
+
+header nav {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.3em;
+}
+
+header nav a:hover {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* conteneur-principale */
+
+
+/* section */
+
+.sous-section {
+    width: 50%;
+    /*   height: 500px; */
+    padding: 100px 15px 0 15px;
+    box-sizing: border-box;
+}
+
+#assiette .texte {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 200px;
+    box-sizing: border-box;
+}
+
+#assiette h2 {
+    font-style: italic;
+    padding: 0;
+    margin-bottom: -7px;
+    font-size: 1.4em;
+    text-align: right;
+    text-transform: none;
+    border-bottom: none;
+    letter-spacing: normal;
+}
+
+#assiette hr {
+    position: relative;
+    /* modifier la position de l'élément */
+    left: -225px;
+    width: 510px;
+    background: black;
+    z-index: 2;
+}
+
+#assiette p {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 0;
+    letter-spacing: 2px;
+}
+
+
+/* salle */
+
+
+/* Toute les autre section */
+
+h2 {
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.note {
+    width: 240px;
+    background: #000;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 15px;
+    padding: 0 0 8px 15px;
+}
+
+
+/* pied de page */
+
+footer {
+    height: 450px;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+.caption {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    bottom: 80px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 2.8em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 60px;
+    letter-spacing: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+address {
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin-top: 2px;
+    font-size: 1em;
+}
+
+footer em {
+    font-style: italic;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+
+/*ranger et colonnes*/
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    /*  height: 493px; */
+}
+
+.col-1 {
+    width: 8.33333%;
+    padding: 25px;
+}
+
+.col-2 {
+    width: 16.66666%;
+    padding: 25px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 25px;
+}
+
+.col-4 {
+    width: 33.33333%;
+    /*  padding: 25px; */
+}
+
+.col-5 {
+    width: 41.66666%;
+    padding: 25px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0;
+}
+
+.col-7 {
+    width: 58.33333%;
+    padding: 25px;
+}
+
+.col-8 {
+    width: 66.66666%;
+    padding: 25px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 25px;
+}
+
+.col-10 {
+    width: 83.33333%;
+    padding: 25px;
+}
+
+.col-11 {
+    width: 91.66666%;
+    padding: 25px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* fin style colonne */
+
+@media screen and (max-width: 1000px) {
+    .conteneur {
+        width: 90%;
+    }
+    .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+    h2,
+    p {
+        text-align: left;
+    }
+    header p {
+        text-align: center;
+    }
+    hr {
+        display: none;
+    }
+    #assiette .texte {
+        padding-right: 0;
+    }
+    #assiette h2 {
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    #assiette p {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .resto-01,
+    .resto-03 {
+        order: -1;
+    }
+    .padding {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    nav a {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    nav a {
+        background-color: red;
+        color: white;
+    }
+}

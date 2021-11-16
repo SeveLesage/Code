@@ -1,0 +1,233 @@
+/* style general */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;
+}
+
+.gris {
+    width: 100%;
+    background-color: gray;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    /* largeur maximun de l'image et la taille de son parent */
+}
+
+.container {
+    width: 60%;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Philosopher', sans-serif;
+    color: rgb(190, 108, 30);
+    font-style: italic;
+    font-size: 1.6em;
+}
+
+header h1:first-of-type {
+    justify-content: start;
+}
+
+header nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 1s ease;
+}
+
+header nav a:hover {
+    background-color: rgb(190, 108, 30);
+    color: white;
+}
+
+
+/* style contenu */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* aside  */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+aside h2 {
+    border-bottom: 1px solid rgb(68, 67, 67);
+    padding-bottom: 20px;
+}
+
+
+/* galerie */
+
+.galerie {
+    margin-top: 100px;
+}
+
+.galerie h2 {
+    border-bottom: 1px solid rgb(68, 67, 67);
+    padding-bottom: 20px;
+}
+
+
+/* style footer */
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+    height: 10px;
+    background-color: white;
+}
+
+
+/* fin footer */
+
+
+/* debut colonne cree une rangée*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33333%;
+    padding: 25px;
+}
+
+.col-2 {
+    width: 16.66666%;
+    padding: 25px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 25px;
+}
+
+.col-4 {
+    width: 33.33333%;
+    /*  padding: 25px; */
+}
+
+.col-5 {
+    width: 41.66666%;
+    padding: 25px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 25px;
+}
+
+.col-7 {
+    width: 58.33333%;
+    padding: 25px;
+}
+
+.col-8 {
+    width: 66.66666%;
+    padding: 15px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 25px;
+}
+
+.col-10 {
+    width: 83.33333%;
+    padding: 25px;
+}
+
+.col-11 {
+    width: 91.66666%;
+    padding: 25px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* fin style colonne */
+
+
+/* fin style desktop */
+
+
+/* debut style mobil responsive*/
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        display: block;
+        height: 200px;
+        border: none;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    /* contenu responsive */
+    .row {
+        display: block;
+    }
+    article {
+        margin: 0 auto;
+    }
+    .col-8 {
+        width: 100%;
+        padding: 10px;
+    }
+    .col-4 {
+        width: 100%;
+        padding: 10px;
+    }
+}
